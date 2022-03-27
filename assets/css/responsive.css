@@ -196,8 +196,8 @@
 		line-height: 47px;
 	}
 	.banner-slider .banner-slider-item .banner-inner .banner-title {
-		font-size: 110px;
-		line-height: 125px;
+		font-size: 55px;
+		line-height: 85px;
 	}
 	.banner-slider:hover .slick-prev {
 		left: 25px;
@@ -416,8 +416,8 @@
 		top: 43px;
 	}
 	.banner-slider .banner-slider-item .banner-inner .banner-title {
-		font-size: 75px;
-		line-height: 80px;
+		font-size: 45px;
+		line-height: 77px;
 	}
 	.single-client-review {
 		margin-top: 5px;
@@ -1580,7 +1580,7 @@
 		font-size: 24px;
 	}
 	.responsive-mobile-menu .navbar-toggler {
-		margin-top: 13px;
+		/* margin-top: 13px; */
 	}
 	.newslatter-area-wrap {
 		padding: 65px 0 70px 0;

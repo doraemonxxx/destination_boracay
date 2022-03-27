@@ -2246,7 +2246,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 	-moz-box-shadow: 0px 3px 13px #23397421;
 	box-shadow: 0px 3px 13px #23397421;
 	border-radius: 4px;
-	padding: 60px 40px;
+	padding: 40px;
 }
 
 .dbtt-main-search .btn-yellow {
@@ -2755,7 +2755,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 }
 
 .navbar-area {
-	padding: 14px 0;
+	padding: 0;
 	position: fixed;
 	width: 100%;
 	left: 0;
@@ -3149,7 +3149,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 		margin-top: 5px;
 	}
 	.responsive-mobile-menu .navbar-toggler {
-		margin-top: 14px;
+		/* margin-top: 14px; */
 		padding: 0 0 0 20px;
 	}
 	.responsive-mobile-menu .navbar-toggler:focus {
@@ -4026,15 +4026,15 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 }
 
 .banner-paginations-3 ul li#slick-slide00:before {
-	content: "Alaska";
+	content: "TITLE";
 }
 
 .banner-paginations-3 ul li#slick-slide01:before {
-	content: "Norway";
+	content: "TITLE";
 }
 
 .banner-paginations-3 ul li#slick-slide02:before {
-	content: "Iceland";
+	content: "TITLE";
 }
 
 .banner-paginations-3 ul .slick-active:after {
@@ -8401,4 +8401,10 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 .footer-area.style-two .widget-contact p span,
 .footer-area.style-two .widget_nav_menu li a {
 	color: var(--paragraph-color);
+}
+
+.dbtt-mobile-menu-con {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
