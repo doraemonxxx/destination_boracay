@@ -84,8 +84,8 @@
 
 @media only screen and (max-width: 1550px) {
 	.navbar-area .nav-container .desktop-logo img {
-		/* max-width: 115px; */
-		max-width: 210px;
+		/* max-width: 120px; */
+		/* max-width: 210px; */
 	}
 	.sidebar-area-4 {
 		margin-left: 60px;
@@ -187,7 +187,7 @@
 	}
 	/****** home 1 responsive ******/
 	.navbar-area .nav-container .desktop-logo {
-		margin-right: 100px;
+		margin-right: 60px;
 	}
 	.navbar-area .nav-container .navbar-collapse .navbar-nav li {
 		margin: 0 14px;
@@ -731,7 +731,7 @@
 		padding: 61px 0 66px 0;
 	}
 	.navbar-area .nav-container .desktop-logo {
-		margin-right: 60px;
+		margin-right: 50px;
 	}
 	.navbar-area .nav-container .navbar-collapse .navbar-nav li {
 		margin: 0 10px;
@@ -1154,6 +1154,12 @@
 	}
 	/****** about page responsive *******/
 	.about-section-right-thumb .about-absolute-thumb {
+		/* display: block; */
+		position: relative;
+		left: 0;
+		bottom: 0;
+	}
+	.about-section-right-thumb > img:nth-child(1) {
 		display: none;
 	}
 	.about-section-right-thumb {

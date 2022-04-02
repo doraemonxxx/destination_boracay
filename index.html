@@ -3,17 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Destination Boracay Travel & Tours Inc.</title>
+    <meta htdbtt-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta htdbtt-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Home | Destination Boracay Travel & Tours Inc.</title>
     <!-- favicon -->
-    <link
-      rel="icon"
-      href="assets/img/favicon.png"
-      sizes="20x20"
-      type="image/png"
-    />
-
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="msapplication-TileColor" content="#1c2c3b" />
+    <meta name="theme-color" content="#ee5523" />
     <!-- Additional plugin css -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/css/animate.css" />
@@ -48,7 +47,7 @@
     <!-- search popup start -->
     <div class="body-overlay" id="body-overlay"></div>
     <div class="search-popup" id="search-popup">
-      <form action="index.html" class="search-form">
+      <form class="search-form">
         <div class="form-group">
           <input type="text" class="form-control" placeholder="Search....." />
         </div>
@@ -65,7 +64,11 @@
         <div class="row no-gutters">
           <div class="col-lg-6">
             <div class="thumb">
-              <img src="assets/img/others/signup.png" alt="img" />
+              <img
+                src="assets/img/others/signup_img_1.png"
+                class="sign_up_img"
+                alt="img"
+              />
             </div>
           </div>
           <div class="col-lg-6 align-self-center">
@@ -106,18 +109,18 @@
                 <p>Or Continue With</p>
                 <ul class="social-icon">
                   <li>
-                    <a class="facebook" href="#" target="_blank"
+                    <a class="facebook sign" href="#" target="_blank"
                       ><i class="fa fa-facebook"></i
                     ></a>
                   </li>
                   <li>
-                    <a class="twitter" href="#" target="_blank"
+                    <a class="twitter sign" href="#" target="_blank"
                       ><i class="fa fa-twitter"></i
                     ></a>
                   </li>
                   <li>
-                    <a class="pinterest" href="#" target="_blank"
-                      ><i class="fa fa-pinterest"></i
+                    <a class="instagram sign" href="#" target="_blank"
+                      ><i class="fa fa-instagram"></i
                     ></a>
                   </li>
                 </ul>
@@ -151,7 +154,7 @@
                 ></a>
               </li>
               <li>
-                <a class="pinterest" href="#" target="_blank"
+                <a class="instagram" href="#" target="_blank"
                   ><i class="fa fa-instagram"></i
                 ></a>
               </li>
@@ -179,7 +182,7 @@
         <div class="responsive-mobile-menu">
           <div class="mobile-logo">
             <a href="index.html">
-              <img src="assets/img/sticky-logo_1.png" alt="logo" />
+              <img src="assets/img/logo/dbtt_logo_trans.png" alt="logo" />
             </a>
           </div>
 
@@ -220,11 +223,11 @@
 
         <div class="collapse navbar-collapse" id="dbtt_main_menu">
           <div class="logo-wrapper desktop-logo">
-            <a href="index.html" class="main-logo">
-              <img src="assets/img/logo_1.png" alt="logo" />
+            <a href="/" class="main-logo">
+              <img src="assets/img/logo/dbtt_logo_colored.png" alt="logo" />
             </a>
             <a href="index.html" class="sticky-logo">
-              <img src="assets/img/sticky-logo_1.png" alt="logo" />
+              <img src="assets/img/logo/dbtt_logo_trans.png" alt="logo" />
             </a>
           </div>
           <ul class="navbar-nav">
@@ -232,13 +235,13 @@
               <a href="#">Home</a>
             </li>
             <li>
-              <a href="#">About Us</a>
+              <a href="pages/about_us/">About Us</a>
             </li>
             <li>
               <a href="#">Blog</a>
             </li>
             <li>
-              <a href="#">Contact</a>
+              <a href="pages/contact/">Contact</a>
             </li>
           </ul>
         </div>
@@ -262,7 +265,7 @@
           class="banner-slider-item jarallax"
           style="background-image: url(assets/img/banner/1_1.png)"
         >
-          <div class="container mt-lg-4">
+          <div class="container mt-lg-5 pt-lg-5">
             <div class="row">
               <div class="col-xl-8 col-lg-9">
                 <div class="row">
@@ -294,11 +297,12 @@
             </div>
           </div>
         </div>
+
         <div
           class="banner-slider-item jarallax"
           style="background-image: url(assets/img/banner/2_2.jpg)"
         >
-          <div class="container">
+          <div class="container mt-lg-5 pt-lg-5">
             <div class="row">
               <div class="col-xl-8 col-lg-9">
                 <div class="row">
@@ -330,11 +334,12 @@
             </div>
           </div>
         </div>
+
         <div
           class="banner-slider-item jarallax"
           style="background-image: url(assets/img/banner/4_4.jpg)"
         >
-          <div class="container">
+          <div class="container mt-lg-5 pt-lg-5">
             <div class="row">
               <div class="col-xl-8 col-lg-9">
                 <div class="row">
@@ -381,16 +386,19 @@
     <!-- banner area end -->
 
     <!-- search area start -->
-    <div class="search-area dbtt-main-search-area">
+    <div
+      class="search-area dbtt-main-search-area mt-0 pd-top-70"
+      id="main_search"
+    >
       <div class="container">
-        <div class="dbtt-main-search">
+        <div class="dbtt-main-search dbtt-main-search-2">
           <div class="row">
             <div class="col-lg-3 col-md-4">
               <div class="dbtt-search-single-wrap">
                 <input
                   class="w-100"
                   type="text"
-                  placeholder="Iloilo City, Philippines"
+                  placeholder="Boracay, Philippines"
                 />
                 <i class="ti-location-pin"></i>
               </div>
@@ -406,9 +414,10 @@
                 <select class="select w-100">
                   <option value="1">Travel Type</option>
                   <option value="2">Event Travel</option>
-                  <option value="3">Weekend Break</option>
-                  <option value="4">Package Holiday</option>
-                  <option value="5">Business Travel</option>
+                  <option value="3">Summer Gateaway</option>
+                  <option value="4">Weekend Break</option>
+                  <option value="5">Package Holiday</option>
+                  <option value="6">Business Travel</option>
                 </select>
                 <i class="fa fa-plus-circle"></i>
               </div>
@@ -463,9 +472,10 @@
                 <a class="intro-cat" href="#">Travel</a>
               </h4>
               <p>
-                Sponsorships are like unicorns or leprechauns, talked about
-                often but they don’t actually exist. There is only dollars and
-                cents, the ...
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Deserunt, sit ea saepe minima ad commodi quibusdam magni odit
+                doloribus quam aperiam perferendis voluptas, reiciendis possimus
+                aut quas vitae veniam. Nemo.
               </p>
             </div>
           </div>
@@ -480,8 +490,10 @@
                 <a class="intro-cat" href="#">Experience</a>
               </h4>
               <p>
-                My response is usually harsh. Offended at the suggestion that a
-                career that’s taken more than a decade to create could be...
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Deserunt, sit ea saepe minima ad commodi quibusdam magni odit
+                doloribus quam aperiam perferendis voluptas, reiciendis possimus
+                aut quas vitae veniam. Nemo.
               </p>
             </div>
           </div>
@@ -496,9 +508,10 @@
                 <a class="intro-cat" href="#">Relax</a>
               </h4>
               <p>
-                I have always made a living to make movies, never the other way
-                around. When I first started I washed in a seafood
-                restaurant....
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Deserunt, sit ea saepe minima ad commodi quibusdam magni odit
+                doloribus quam aperiam perferendis voluptas, reiciendis possimus
+                aut quas vitae veniam. Nemo.
               </p>
             </div>
           </div>
@@ -741,7 +754,7 @@
                 data-wow-duration="0.6s"
                 data-wow-delay="0.1s"
               >
-                Perfect Holiday Plan
+                Perfect Holiday & Summer Plan
               </h2>
               <p
                 class="wow animated fadeInUp"
@@ -1087,20 +1100,6 @@
     </div>
     <!-- blog area End -->
 
-    <!-- ads area start -->
-    <div class="ads-area pd-top-90">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-xl-8 col-lg-9">
-            <a class="ads-thumb" href="#">
-              <img src="assets/img/others/1.png" alt="ads" />
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- ads area End -->
-
     <!-- newslatter area Start -->
     <div class="newslatter-area pd-top-120">
       <div class="container">
@@ -1147,15 +1146,13 @@
               <div class="about_us_widget">
                 <a href="index.html" class="footer-logo">
                   <img
-                    src="assets/img/logo_1.png"
+                    src="assets/img/logo/dbtt_logo_colored.png"
                     alt="destination boracay travel and tour Inc. footer logo"
                   />
                 </a>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
-                  quas, vitae dolores voluptas, possimus minima, magni at
-                  ducimus eveniet expedita voluptate quam. Odit nemo consequatur
-                  vel praesentium quasi, cum minima?
+                  quas, vitae dolores voluptas.
                 </p>
                 <ul class="social-icon">
                   <li>
@@ -1169,7 +1166,7 @@
                     ></a>
                   </li>
                   <li>
-                    <a class="pinterest" href="#" target="_blank"
+                    <a class="instagram" href="#" target="_blank"
                       ><i class="fa fa-instagram"></i
                     ></a>
                   </li>
@@ -1194,7 +1191,7 @@
                     class="fa fa-mobile-phone base-color"
                     style="font-size: 20px"
                   ></i>
-                  <span>09111111111</span>
+                  <span>09123456789</span>
                 </p>
                 <p class="telephone">
                   <i class="fa fa-phone base-color"></i>
@@ -1208,11 +1205,11 @@
               <h4 class="widget-title">Quick Link</h4>
               <ul class="widget_nav_menu">
                 <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
+                <li><a href="pages/about_us/">About Us</a></li>
                 <li><a href="#">Destination</a></li>
                 <li><a href="#">Tours</a></li>
                 <li><a href="#">Blog</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="pages/contact/">Contact</a></li>
               </ul>
             </div>
           </div>
@@ -1286,6 +1283,12 @@
     <script src="assets/js/swiper.min.js"></script>
     <script src="assets/js/jquery.nice-select.min.js"></script>
     <script src="assets/js/jquery-ui.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jarallax/2.0.3/jarallax.min.js"
+      integrity="sha512-bb6SckWHWfSVlF459oTkPxiprNFEv5nmXvyHSBAH00eG799zXU8w3iM2i7878FHuZsAPZEUjwQqlWM9QKz5DAQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
 
     <!-- main js -->
     <script src="assets/js/main.js"></script>

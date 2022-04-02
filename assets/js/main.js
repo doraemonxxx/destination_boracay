@@ -8,17 +8,17 @@
   /* ********************************************
         14. Background Youtube Video 
     ******************************************** */
-  if ($(".youtube-bg").length) {
-    $(".youtube-bg").YTPlayer({
-      videoURL: "Sz_1tkcU0Co",
-      containment: ".youtube-bg",
-      mute: true,
-      loop: true,
-      startAt: 7,
-      showControls: false,
-      showYTLogo: false,
-    });
-  }
+  // if ($(".youtube-bg").length) {
+  //   $(".youtube-bg").YTPlayer({
+  //     videoURL: "Sz_1tkcU0Co",
+  //     containment: ".youtube-bg",
+  //     mute: true,
+  //     loop: true,
+  //     startAt: 7,
+  //     showControls: false,
+  //     showYTLogo: false,
+  //   });
+  // }
 
   $(document).ready(function () {
     /*------------------------------------------------------
@@ -39,7 +39,7 @@
       }
 
       //back to top show/hide
-      let ScrollTop = $(".back-to-top");
+      var ScrollTop = $(".back-to-top");
       if ($(window).scrollTop() > 1000) {
         ScrollTop.fadeIn(1000);
       } else {
@@ -49,7 +49,7 @@
 
     function readURL(input) {
       if (input.files && input.files[0]) {
-        let reader = new FileReader();
+        var reader = new FileReader();
         reader.onload = function (e) {
           $("#dbtt_imagePreview").css(
             "background-image",
@@ -108,7 +108,7 @@
       $(".current").addClass("new-current");
     });
 
-    let $banner_slider = $(".banner-slider");
+    var $banner_slider = $(".banner-slider");
     $banner_slider.slick({
       slidesToShow: 1,
       dots: true,
@@ -128,20 +128,20 @@
     $(".banner-slider").on(
       "beforeChange",
       function (event, slick, currentSlide, nextSlide) {
-        let firstNumber = check_number(++nextSlide);
+        var firstNumber = check_number(++nextSlide);
         $(".banner-slider-controls .slider-extra .text .first").text(
           firstNumber
         );
       }
     );
-    let smBannerSlider = $(".banner-slider").slick("getSlick");
-    let smBannerSliderCount = smBannerSlider.slideCount;
+    var smBannerSlider = $(".banner-slider").slick("getSlick");
+    var smBannerSliderCount = smBannerSlider.slideCount;
     $(".banner-slider-controls .slider-extra .text .last").text(
       check_number(smBannerSliderCount)
     );
 
     function check_number(num) {
-      let IsInteger = /^[0-9]+$/.test(num);
+      var IsInteger = /^[0-9]+$/.test(num);
       return IsInteger ? "0" + num : null;
     }
 
@@ -179,7 +179,7 @@
     /* -----------------------------------------------------
             destination list slider
         ----------------------------------------------------- */
-    let $d_list_slider = $(".destinations-list-slider");
+    var $d_list_slider = $(".destinations-list-slider");
     $d_list_slider.slick({
       slidesToShow: 3,
       dots: false,
@@ -211,12 +211,12 @@
       ],
     });
     //active progress
-    let $listProgressBar = $(".d-list-progress");
-    let $listProgressBarLabel = $(".slider__label");
+    var $listProgressBar = $(".d-list-progress");
+    var $listProgressBarLabel = $(".slider__label");
     $d_list_slider.on(
       "beforeChange",
       function (event, slick, currentSlide, nextSlide) {
-        let calc = (nextSlide / (slick.slideCount - 1)) * 100;
+        var calc = (nextSlide / (slick.slideCount - 1)) * 100;
         $listProgressBar
           .css("background-size", calc + "% 100%")
           .attr("aria-valuenow", calc);
@@ -227,27 +227,27 @@
     $(".destinations-list-slider").on(
       "beforeChange",
       function (event, slick, currentSlide, nextSlide) {
-        let firstNumber = check_number(++nextSlide);
+        var firstNumber = check_number(++nextSlide);
         $(".destinations-slider-controls .slider-extra .text .first").text(
           firstNumber
         );
       }
     );
-    let smDestinationSlider = $(".destinations-list-slider").slick("getSlick");
-    let smDestinationSliderCount = smDestinationSlider.slideCount;
+    var smDestinationSlider = $(".destinations-list-slider").slick("getSlick");
+    var smDestinationSliderCount = smDestinationSlider.slideCount;
     $(".destinations-slider-controls .slider-extra .text .last").text(
       check_number(smDestinationSliderCount)
     );
 
     function check_number(num) {
-      let IsInteger = /^[0-9]+$/.test(num);
+      var IsInteger = /^[0-9]+$/.test(num);
       return IsInteger ? "0" + num : null;
     }
 
     /* -----------------------------------------------------
             destination details main slider
         ----------------------------------------------------- */
-    let $d_details_main_slider = $(".destinations-details-main-slider");
+    var $d_details_main_slider = $(".destinations-details-main-slider");
     $d_details_main_slider.slick({
       slidesToShow: 1,
       dots: false,
@@ -263,12 +263,12 @@
       appendArrows: $(".destinations-details-main-slider-controls .slider-nav"),
     });
     //active progress
-    let $progressBar = $(".d-list-progress");
-    let $progressBarLabel = $(".slider__label");
+    var $progressBar = $(".d-list-progress");
+    var $progressBarLabel = $(".slider__label");
     $d_details_main_slider.on(
       "beforeChange",
       function (event, slick, currentSlide, nextSlide) {
-        let calc = (nextSlide / (slick.slideCount - 1)) * 100;
+        var calc = (nextSlide / (slick.slideCount - 1)) * 100;
         $progressBar
           .css("background-size", calc + "% 100%")
           .attr("aria-valuenow", calc);
@@ -279,27 +279,27 @@
     $(".destinations-details-main-slider").on(
       "beforeChange",
       function (event, slick, currentSlide, nextSlide) {
-        let firstNumber = check_number(++nextSlide);
+        var firstNumber = check_number(++nextSlide);
         $(
           ".destinations-details-main-slider-controls .slider-extra .text .first"
         ).text(firstNumber);
       }
     );
-    let smSlider = $(".destinations-details-main-slider").slick("getSlick");
-    let smSliderCount = smSlider.slideCount;
+    var smSlider = $(".destinations-details-main-slider").slick("getSlick");
+    var smSliderCount = smSlider.slideCount;
     $(
       ".destinations-details-main-slider-controls .slider-extra .text .last"
     ).text(check_number(smSliderCount));
 
     function check_number(num) {
-      let IsInteger = /^[0-9]+$/.test(num);
+      var IsInteger = /^[0-9]+$/.test(num);
       return IsInteger ? "0" + num : null;
     }
 
     /* -----------------------------------------------------
             destination details main slider
         ----------------------------------------------------- */
-    let $d_client_review_slider = $(".destinations-client-review-slider");
+    var $d_client_review_slider = $(".destinations-client-review-slider");
     $d_client_review_slider.slick({
       slidesToShow: 4,
       dots: false,
@@ -339,7 +339,7 @@
     /* -----------------------------------------------------
             upcomming-card-slider
         ----------------------------------------------------- */
-    let $upcomming_card_slider_1 = $(".upcomming-card-slider-1");
+    var $upcomming_card_slider_1 = $(".upcomming-card-slider-1");
     $upcomming_card_slider_1.slick({
       slidesToShow: 4,
       dots: false,
@@ -402,7 +402,7 @@
     /* -----------------------------------------------------
             upcomming-card-slider-2
         ----------------------------------------------------- */
-    let $upcomming_card_slider_2 = $(".upcomming-card-slider-2");
+    var $upcomming_card_slider_2 = $(".upcomming-card-slider-2");
     $upcomming_card_slider_2.slick({
       slidesToShow: 3,
       dots: false,
@@ -435,7 +435,7 @@
     /* -----------------------------------------------------
             upcomming-card-slider-2
         ----------------------------------------------------- */
-    let $upcomming_card_slider_3 = $(".upcomming-card-slider-3");
+    var $upcomming_card_slider_3 = $(".upcomming-card-slider-3");
     $upcomming_card_slider_3.slick({
       slidesToShow: 4,
       dots: false,
@@ -483,7 +483,7 @@
     /* -----------------------------------------------------
             upcomming-card-slider-2
         ----------------------------------------------------- */
-    let $client_slider = $(".client-slider");
+    var $client_slider = $(".client-slider");
     $client_slider.slick({
       slidesToShow: 3,
       dots: false,
@@ -521,7 +521,7 @@
     /* -----------------------------------------------------
             upcomming-card-slider-2
         ----------------------------------------------------- */
-    let $instagram_slider = $(".instagram-slider");
+    var $instagram_slider = $(".instagram-slider");
     $instagram_slider.slick({
       slidesToShow: 6,
       dots: false,
@@ -549,7 +549,7 @@
     /* -----------------------------------------------------
             blog-slider
         ----------------------------------------------------- */
-    let $blog_slider = $(".blog-slider");
+    var $blog_slider = $(".blog-slider");
     $blog_slider.slick({
       slidesToShow: 2,
       dots: false,
@@ -576,7 +576,7 @@
     if ($(".gallery-slider").length) {
       $(".gallery-slider").owlCarousel({
         items: 3,
-        smartSpeed: 450,
+        // smartSpeed: 450,
         loop: true,
         autoplay: true,
         autoplayTimeout: 10000,
@@ -604,7 +604,7 @@
     /* -------------------------------------------------------------
             swiper-slider
         ------------------------------------------------------------- */
-    let swiper = new Swiper(".client-slider-two", {
+    var swiper = new Swiper(".client-slider-two", {
       mode: "horizontal",
       loop: true,
       speed: 950,
@@ -643,7 +643,7 @@
     /*--------------------------------------------------------
             search date picker 
         --------------------------------------------------------*/
-    // let localToday = new Date();
+    // var localToday = new Date();
     // localToday.setDate(tomorrow.getDate() + 1); // tomorrow
     if ($(".departing-date").length) {
       $(function () {
@@ -682,11 +682,11 @@
     /* --------------------------------------------------
             Gallery 
         ---------------------------------------------------- */
-    let $galleryFilterArea = $(".gallery-filter-area"),
+    var $galleryFilterArea = $(".gallery-filter-area"),
       $galleryFilterMenu = $(".gallery-filter-menu");
     /*Filter*/
     $galleryFilterMenu.on("click", "button, a", function () {
-      let $this = $(this),
+      var $this = $(this),
         $filterValue = $this.attr("data-filter");
       $galleryFilterMenu.find("button, a").removeClass("active");
       $this.addClass("active");
@@ -710,7 +710,7 @@
           },
         },
       });
-      let $this = $(this),
+      var $this = $(this),
         $galleryFilterItem = ".tp-gallery-item";
       $this.imagesLoaded(function () {
         $this.isotope({
@@ -745,8 +745,8 @@
     /*------------------------------------------------------
             Search Popup
         -------------------------------------------------------*/
-    let searchBodyOvrelay = $("#body-overlay");
-    let searchPopup = $("#search-popup");
+    var searchBodyOvrelay = $("#body-overlay");
+    var searchPopup = $("#search-popup");
 
     $(document).on("click", "#body-overlay", function (e) {
       e.preventDefault();
@@ -762,8 +762,8 @@
     /*--------------------------------------------
             signUp Popup
         ---------------------------------------------*/
-    let singBodyOvrelay = $("#body-overlay");
-    let singupPopup = $("#signUp-popup");
+    var singBodyOvrelay = $("#body-overlay");
+    var singupPopup = $("#signUp-popup");
 
     $(document).on("click", "#body-overlay", function (e) {
       e.preventDefault();
@@ -781,7 +781,7 @@
     /*--------------------------------
             preloader
         ---------------------------------*/
-    let preLoder = $("#preloader");
+    var preLoder = $("#preloader");
     preLoder.fadeOut(1000);
 
     /*--------------------------------
@@ -814,8 +814,8 @@
       .not("#scrollUp")
       .on("click", function (e) {
         e.preventDefault();
-        let target = this.hash;
-        let $target = $(target);
+        var target = this.hash;
+        var $target = $(target);
         $("html, body").stop().animate(
           {
             scrollTop: $target.offset().top,
@@ -825,4 +825,10 @@
         );
       });
   }
+
+  /*-----------------login-form-wrap-------------------------------------
+   */
+  $("form").submit(function (e) {
+    e.preventDefault();
+  });
 })(jQuery);
