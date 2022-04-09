@@ -956,6 +956,9 @@
 	.video-banner-area {
 		height: 550px !important;
 	}
+	.about_us_video.jarallax {
+		height: 100%;
+	}
 	.top-navbar {
 		display: none;
 	}
