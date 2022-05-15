@@ -5,6 +5,14 @@
     e.preventDefault();
   });
 
+  $("#subscribe_email").click(function () {
+    var email = $("#user_email").val();
+    // if (emai) alert("Thank you for subscribing");
+    if (email) {
+      $(".toast").toast("show");
+    }
+  });
+
   /* ********************************************
         14. Background Youtube Video 
     ******************************************** */

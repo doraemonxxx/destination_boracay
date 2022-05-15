@@ -4757,8 +4757,14 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 
 .single-destinations-list .thumb {
 	position: relative;
-	background: var(--main-color-two);
+	/* background: var(--main-color-two); */
+	background-color: transparent;
 	overflow: hidden;
+	width: 100%;
+	display: block;
+	/* height: 150px;
+	max-height: 150px;
+	min-height: 100px; */
 }
 
 .single-destinations-list .thumb img {
@@ -4766,6 +4772,8 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 	-moz-transition: all 0.8s ease;
 	-o-transition: all 0.8s ease;
 	transition: all 0.8s ease;
+	width: 100%;
+	display: block;
 }
 
 .single-destinations-list .thumb:after {
@@ -5831,6 +5839,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 	position: relative;
 	border-radius: 10px;
 	overflow: hidden;
+	height: 298px;
 }
 
 .single-team .thumb img {
@@ -5842,6 +5851,8 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 	-webkit-transform: scale(1);
 	-ms-transform: scale(1);
 	transform: scale(1);
+	width: 100%;
+	height: inherit;
 }
 
 .single-team .thumb:after {
