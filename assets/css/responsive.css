@@ -182,7 +182,7 @@
 		top: 5px;
 		line-height: 35px;
 	}
-	.newslatter-area-wrap {
+	.newsletter-area-wrap {
 		padding: 67px 0 70px 0;
 	}
 	/****** home 1 responsive ******/
@@ -327,21 +327,21 @@
 		font-size: 14px;
 	}
 	/****** footer responsive *********/
-	.newslatter-wrap .input-group-text {
+	.newsletter-wrap .input-group-text {
 		height: 55px;
 		font-size: 15px;
 	}
-	.newslatter-wrap.style-two .input-group-text {
+	.newsletter-wrap.style-two .input-group-text {
 		height: auto;
 	}
-	.newslatter-wrap input {
+	.newsletter-wrap input {
 		height: 55px;
 		font-size: 15px;
 	}
-	.newslatter-wrap button {
+	.newsletter-wrap button {
 		height: 55px;
 	}
-	.newslatter-wrap.style-two button {
+	.newsletter-wrap.style-two button {
 		height: auto;
 	}
 	.about_us_widget .footer-logo {
@@ -727,7 +727,7 @@
 	.login-register-popup {
 		width: 90%;
 	}
-	.newslatter-area-wrap {
+	.newsletter-area-wrap {
 		padding: 61px 0 66px 0;
 	}
 	.navbar-area .nav-container .desktop-logo {
@@ -929,7 +929,7 @@
 	.countdown-item span {
 		font-size: 14px;
 	}
-	.newslatter-area-blog.pd-top-108 {
+	.newsletter-area-blog.pd-top-108 {
 		padding-top: 112px;
 	}
 }
@@ -1378,7 +1378,7 @@
 	.dbtt-tabs {
 		margin: 50px 0 50px 0;
 	}
-	.newslatter-area-wrap {
+	.newsletter-area-wrap {
 		padding: 61px 0 70px 0;
 	}
 	/******* home 2 responsive *******/
@@ -1591,7 +1591,7 @@
 	.responsive-mobile-menu .navbar-toggler {
 		/* margin-top: 13px; */
 	}
-	.newslatter-area-wrap {
+	.newsletter-area-wrap {
 		padding: 65px 0 70px 0;
 	}
 	.destinations-details-page .destinations-client-review-slider {
@@ -1850,7 +1850,7 @@
 		margin-left: 0;
 		margin-right: 5px;
 	}
-	.newslatter-area-blog.pd-top-108 {
+	.newsletter-area-blog.pd-top-108 {
 		padding-top: 120px;
 	}
 	.comming-soon-info-wrap {
@@ -1998,7 +1998,7 @@
 	.sidebar-area .widget {
 		margin-bottom: 30px;
 	}
-	.newslatter-area-blog.pd-top-108 {
+	.newsletter-area-blog.pd-top-108 {
 		padding-top: 78px;
 	}
 	.upcomming-card-slider-1 .single-upconing-card {
@@ -2025,7 +2025,7 @@
 	#ui-datepicker-div {
 		left: 15px !important;
 	}
-	.newslatter-wrap .btn {
+	.newsletter-wrap .btn {
 		padding: 0 15px;
 	}
 	.video-banner-area .video-banner-content-wrap .video-banner-content h2 {

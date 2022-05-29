@@ -5923,7 +5923,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 	transform: scale(1.1);
 }
 
-.team-newslater-bg {
+.team-newsletter-bg {
 	/* background-position: 100% 100%; */
 	background-position: 100% 30rem;
 	background-size: 100%;
@@ -5931,14 +5931,14 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 }
 
 @media only screen and (max-width: 1080px) {
-	.team-newslater-bg {
+	.team-newsletter-bg {
 		background-position: 100% 30rem;
 		background-size: 110%;
 	}
 }
 
 @media only screen and (max-width: 992px) {
-	.team-newslater-bg {
+	.team-newsletter-bg {
 		background-position: 100% bottom;
 		background-size: 100%;
 	}
@@ -8181,21 +8181,21 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 }
 
 /* -----------------------------------------------------
-    newslatter style
+    newsletter style
 ----------------------------------------------------- */
 
-.newslatter-area-wrap {
+.newsletter-area-wrap {
 	padding: 57px 0 63px 0;
 }
 
-.newslatter-wrap {
+.newsletter-wrap {
 	-webkit-box-shadow: 0px 3px 13px #23397426;
 	-moz-box-shadow: 0px 3px 13px #23397426;
 	box-shadow: 0px 3px 13px #23397426;
 	border-radius: 4px 0 0 4px;
 }
 
-.newslatter-wrap .input-group-text {
+.newsletter-wrap .input-group-text {
 	padding: 0 22px;
 	background-color: #ffffff;
 	color: #cfd3de;
@@ -8203,7 +8203,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 	border-radius: 4px 0 0 4px;
 }
 
-.newslatter-wrap input {
+.newsletter-wrap input {
 	height: 62px;
 	border: 0;
 	padding: 0.375rem 1rem;
@@ -8211,46 +8211,46 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 	border-left: 1px solid #e9ecef;
 }
 
-.newslatter-wrap input:focus {
+.newsletter-wrap input:focus {
 	outline: 0;
 	border: 0;
 	border-left: 1px solid #e9ecef;
 }
 
-.newslatter-wrap input::-webkit-input-placeholder {
+.newsletter-wrap input::-webkit-input-placeholder {
 	color: #cfd3de;
 }
 
-.newslatter-wrap input:-ms-input-placeholder {
+.newsletter-wrap input:-ms-input-placeholder {
 	color: #cfd3de;
 }
 
-.newslatter-wrap input::-ms-input-placeholder {
+.newsletter-wrap input::-ms-input-placeholder {
 	color: #cfd3de;
 }
 
-.newslatter-wrap input::placeholder {
+.newsletter-wrap input::placeholder {
 	color: #cfd3de;
 }
 
-.newslatter-wrap button {
+.newsletter-wrap button {
 	height: 62px;
 }
 
-.newslatter-wrap.style-two {
+.newsletter-wrap.style-two {
 	background: #f8f8f8;
 	border-radius: 4px;
 }
 
-.newslatter-wrap.style-two .input-group-prepend {
+.newsletter-wrap.style-two .input-group-prepend {
 	margin: 10px 0 10px 18px;
 }
 
-.newslatter-wrap.style-two .input-group-text {
+.newsletter-wrap.style-two .input-group-text {
 	padding: 0 16px;
 }
 
-.newslatter-wrap.style-two input {
+.newsletter-wrap.style-two input {
 	margin: 10px 20px 10px 0;
 	height: 42px;
 }
